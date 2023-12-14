@@ -1,7 +1,7 @@
 
 [//]: # (Pandoc Formatting Macros)
 
-[//]: # (PDF (Portable Document Format))
+[//]: # (Portable Document Format)
 
 [//]: # (blank)
 
