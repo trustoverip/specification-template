@@ -53,4 +53,4 @@
  
 Identify the Specification and version number here:
 
-did:webs DID Method Specification (All Versions)
+Your specification (All Versions)
