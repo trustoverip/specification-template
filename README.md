@@ -1,8 +1,23 @@
-# specification-template
+# Specification Template
 
-A template for `toip` specifications [specification-template](https://w3c-ccg.github.io/did-spec/#specific-did-method-schemes).
+This is the working area for the Trust over IP specification template.
 
-The spec is written in W3C's [respec](https://dev.w3.org/2008/video/mediaann/ReSpec.js/documentation.html) format using DIF's [Spec-Up Tool](https://github.com/decentralized-identity/spec-up).
-To browse the spec, see the [rendering on GitHub pages](https://trustoverip.github.io/tswg-did-method-webs-specification/index.html). To contribute to the spec, submit PRs that modify the .md files that are used to generate the .html files in this folder.
+* [Editor's Copy](https://trustoverip.github.io/specification-template/)
 
-Before submitting a PR, please see the [Editing The Spec](./EditingTheSpec.md) document for guidance on generating the specification locally for review.
+#### Contributing
+
+All Trust Over IP Foundation Technical Stack Working Group contributions are done so under the following licenses:
+
+* [Patent and Copyright Grants](CONTRIBUTING.md)
+* [Source Code](SOURCE_CODE.md)
+
+#### Licensing
+
+All Trust Over IP Foundation Technical Stack Working Group deliverables are published under the following licenses:
+
+* [Patent and Copyright Grants](LICENSE.md)
+* [Source Code](SOURCE_CODE.md)
+
+#### Getting involved
+
+Join a community of individuals and organizations solving the toughest technical and human-centric problems in digital trust. https://trustoverip.org/get-involved/membership/
