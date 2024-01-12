@@ -10,6 +10,23 @@ Two ways to use the template:
 * The green `Use this template` button in the upper right. Then select `Create new repository` or
 * When creating a new repository from the `Repository template` menu select `toip/specification-template`
 
+After setting up your new repository you will need to configure GitHub pages.
+
+Under `Settings -> Code and automation -> Pages` ensure the following settings are applied
+
+* Build and deployment -> Source -> Deploy from a branch
+* Build and deployment -> Branch -> gh-pages
+* Build and deployment -> Branch -> folder -> / (root)
+
+### Editing locally
+
+In the root of the repository run `npm install` to install dependencies.
+
+Run `npm run render` to render the HTML under `docs/index.html` this can then be previewed in your browser.
+
+Run `npm run edit` to watch for changes and re-render the HTML.
+
+Be sure to remove references to `specification-template` in favor of your new specification!
 
 #### Contributing
 
