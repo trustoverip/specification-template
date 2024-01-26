@@ -28,6 +28,17 @@ Run `npm run edit` to watch for changes and re-render the HTML.
 
 Be sure to remove references to `specification-template` in favor of your new specification!
 
+### Experimental PDF generation
+
+To output a PDF (on macOS, requires Python)
+
+`# brew install pandoc`
+`# brew install librsvg homebrew/cask/basictex`
+
+`# python combine.py`
+`# chmod +x pdf.sh`
+`# ./pdf.sh`
+
 #### Contributing
 
 All Trust Over IP Foundation Technical Stack Working Group contributions are done so under the following licenses:
