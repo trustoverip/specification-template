@@ -112,3 +112,6 @@ nbproject/
 docs/index.html
 
 .DS_Store
+
+out.md
+out.pdf
