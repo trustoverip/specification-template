@@ -10,7 +10,8 @@
   "scripts": {
     "edit": "node -e \"require('./index')()\"",
     "render": "node -e \"require('./index')({ nowatch: true })\"",
-    "dev": "node -e \"require('./index')({ dev: true })\""
+    "dev": "node -e \"require('./index')({ dev: true })\"",
+    "pdf": "node -e \"require('./index')({ pdf: true })\""
   },
   "keywords": [
     "spec",
@@ -52,6 +53,7 @@
     "markdown-it-task-lists": "2.1.1",
     "markdown-it-textual-uml": "0.1.3",
     "markdown-it-toc-and-anchor": "4.2.0",
+    "md-to-pdf": "^5.2.4",
     "merge-stream": "2.0.0",
     "pkg-dir": "4.2.0",
     "prismjs": ">=1.24.0",
