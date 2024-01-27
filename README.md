@@ -30,14 +30,7 @@ Be sure to remove references to `specification-template` in favor of your new sp
 
 ### Experimental PDF generation
 
-To output a PDF (on macOS, requires Python)
-
-`# brew install pandoc`
-`# brew install librsvg homebrew/cask/basictex`
-
-`# python combine.py`
-`# chmod +x pdf.sh`
-`# ./pdf.sh`
+Run `npm run pdf` to render the pdf.
 
 #### Contributing
 

@@ -266,6 +266,28 @@ module.exports = function(options = {}) {
       }
     }
 
+   if (options.pdf) {
+      const { mdToPdf } = require('md-to-pdf');
+
+      config.specs.forEach(spec => { 
+        var buf = '';
+
+        spec.spec_directory = normalizePath(spec.spec_directory);
+        spec.destination = normalizePath(spec.output_path || spec.spec_directory);
+        
+        fs.ensureDirSync(spec.destination);
+
+        spec.markdown_paths.map(p => {
+          buf += fs.readFileSync(spec.spec_directory + p, 'utf-8');
+          buf += '\n\n';
+        });
+        
+        mdToPdf({ content: buf }, { dest: spec.destination + spec.title.replace(/ /g, '-') + '.pdf' })
+          .then(() => process.exit(0))
+          .catch(console.error);
+      });
+    }
+
     config.specs.forEach(spec => {
       spec.spec_directory = normalizePath(spec.spec_directory);    
       spec.destination = normalizePath(spec.output_path || spec.spec_directory);
@@ -329,7 +351,6 @@ module.exports = function(options = {}) {
       render(spec, assetTags).then(() => {
         if (options.nowatch) process.exit(0)
       }).catch(() => process.exit(1));
-
     });
 
   }
